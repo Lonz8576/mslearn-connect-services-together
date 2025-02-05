@@ -35,8 +35,7 @@ namespace privatemessagesender
             }
             finally
             {
-                // Calling DisposeAsync on client types is required to ensure that network
-                // resources and other unmanaged objects are properly cleaned up.
+                
                 await sender.DisposeAsync();
                 await client.DisposeAsync();
             }
